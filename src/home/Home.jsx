@@ -6,7 +6,8 @@ import meuble from '../assets/meuble1.jpg'
 import cuisine from '../assets/cuisi.jpg'
 import vinyl from '../assets/vini.jpg'
 import back from '../assets/backi4.jpg'
-
+import ImageSlider from '../ImageSlide'
+import logo from '../assets/logo.webp'
 
 
 
@@ -23,28 +24,27 @@ function Home() {
       <div className='bg-slate-700 py-[5rem]'>
         <div className="container mx-auto px-4">
           {/*services*/}
-          <div className='text-center'>
+          <div className='text-center' id='services'>
             <h1 className='text-4xl text-white font-extrabold mb-[2rem]'>Diese Leistungen bieten wir an</h1>
-            <p className='mx-auto w-[50%] text-white text-xl'>Wir stehen Ihnen gerne in den folgenden Dienstleistungsbereichen 7 Tage die Woche, sowie an Sonn- und Feiertagen zur Verfügung. Überzeugen Sie sich selbst von unserem Können.</p>
+            <p className='text-center text-white text-xl'>Wir stehen Ihnen gerne in den folgenden Dienstleistungsbereichen 7 Tage die Woche, sowie an <br /> Sonn- und Feiertagen zur Verfügung. Überzeugen Sie sich selbst von unserem Können.</p>
           </div>
-          <div className='grid md:grid-cols-2 gap-10 mt-[7rem]'>
-            <div className='shadow-2xl p-7'>
+          <div className='grid md:grid-cols-2 gap-5 mt-[7rem]'>
+            <div className='shadow-2xl p-3'>
               <img className='rounded-full w-[200px] h-[200px]' src={deme} alt="" />
               <div>
                 <h4 className='my-5 text-white text-3xl font-bold'>Umzüge</h4>
                 <p className='text-white'>Sie suchen nach ein paar Extrahänden die bei Ihrem Umzug mit anpacken? Sie wollen sich einfach zurücklehnen, während unser kräftiges Team das Umziehen in eine neue Wohnung oder neues Haus ermöglicht? Sie wollen einen stressfreien Umzug? Dann sind Sie bei uns richtig! Wir wissen wie anstrengend, zeitintensiv und nervenaufreibend das Beziehen eines neuen Zuhauses sein kann. Daher unterstützen wir Sie gerne für einen entspannten und problemfreien Ablauf. So macht Umziehen Spaß!</p>
               </div>
             </div>
-            <div className='shadow-2xl p-7'>
+            <div className='shadow-2xl p-3'>
               <img className='rounded-full w-[200px] h-[200px]' src={etude} alt="" />
               <div>
-                <h4 className='my-5 text-white text-3xl font-bold'>Studentenvermittlung
-                </h4>
+                <h4 className='my-5 text-white text-3xl font-bold'>Studentenvermittlung</h4>
                 <p className='text-white'>Suchen Sie nach einer preiswerten Lösung für Ihren Umzug, die Renovierung Ihres Hauses oder Ähnlichem? Unsere Studenten stehen Ihnen gerne zur Seite. Wir vermitteln nur erfahrene und zuverlässige Helfer.</p>
                 <p className='text-white'>Wenn Sie sich für unsere Vermittlung entscheiden, können Sie sich ganz einfach bei uns melden. Wir werden Ihnen dann qualifizierte Studenten vermitteln und die entsprechenden Kontaktdaten innerhalb des selben Werktages weiterleiten. Die Vermittlungsgebühr wird nach erfolgreicher Vermittlung fällig.</p>
               </div>
             </div>
-            <div className='shadow-2xl p-7'>
+            <div className='shadow-2xl p-3'>
               <img className='rounded-full w-[200px] h-[200px]' src={meuble} alt="" />
               <div>
                 <h4 className='my-5 text-white text-3xl font-bold'>Möbelmontage</h4>
@@ -56,7 +56,7 @@ function Home() {
                 </ul>
               </div>
             </div>
-            <div className='shadow-2xl p-7'>
+            <div className='shadow-2xl p-3'>
               <img className='rounded-full w-[200px] h-[200px]' src={cuisine} alt="" />
               <div>
                 <h4 className='my-5 text-white text-3xl font-bold'>Küchenmontage</h4>
@@ -71,14 +71,14 @@ function Home() {
                 </ul>
               </div>
             </div>
-            <div className='shadow-2xl p-7'>
+            <div className='shadow-2xl p-3'>
               <img className='rounded-full w-[200px] h-[200px]' src={vinyl} alt="" />
               <div>
                 <h4 className='my-5 text-white text-3xl font-bold'>Venyl / Laminat verlegen</h4>
                 <p className='text-white'>Wir entfernen Ihren alten Boden und oder verlegen Ihren neuen Boden. Von Parkett über Laminat bis zu Teppichboden können wir alle verschiedene Bodenbeläge entfernen. Wir verlegen allerdings nur Vinylboden/Laminat.</p>
               </div>
             </div>
-            <div className='shadow-2xl p-7'>
+            <div className='shadow-2xl p-3'>
               <img className='rounded-full w-[200px] h-[200px]' src={back} alt="" />
               <div>
                 <h4 className='my-5 text-white text-3xl font-bold'>Mehr...</h4>
@@ -117,8 +117,22 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className='bg-stone-400'>
+        <div className='container mx-auto px-4'>
+          <h1 className='text-center font-extrabold text-4xl pt-[2rem]'>Our Galleries</h1>
+          <ImageSlider />
+        </div>
+      </div>
       <div>
-        
+        <div className='bg-black py-[2rem]'>
+          <div className='flex justify-center mb-[2rem]'>
+            <img className='w-[70px] h-[70px] rounded-full' src={logo} alt="" />
+          </div>
+          <div className='text-center text-white'>
+            <p className='text-2xl'>E-mail : ac-services@gmail.com</p>
+            <p className='text-2xl'>Telephone : + 4178-67754-908864</p>
+          </div>
+        </div>
       </div>
     </div>
   )

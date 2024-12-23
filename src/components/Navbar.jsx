@@ -39,7 +39,7 @@ const Navbar = () => {
                         </div>
                         <nav className="flex gap-5 navright" >
                             <Link className="head-link" to="/">Empfang</Link>
-                            <Link className="head-link" to="/about">Dienstleistungen</Link>
+                            <Link className="head-link" to={"#services"}>Dienstleistungen</Link>
                             <Link className="head-link" to="/pricing">Kontakt</Link>
 
                         </nav>
