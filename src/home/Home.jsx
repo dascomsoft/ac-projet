@@ -122,7 +122,7 @@ function Home() {
       </div>
       <div className='bg-stone-400'>
         <div className='container mx-auto px-4'>
-          <h1 className='text-center font-extrabold text-4xl pt-[2rem]'>Our Galleries</h1>
+          <h1 className='text-center font-extrabold text-4xl pt-[2rem]'>Unsere Galerie</h1>
           <ImageSlider />
         </div>
       </div>
