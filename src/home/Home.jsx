@@ -1,18 +1,12 @@
 import React from 'react'
 import '../styles/Home.css'
-import deme from '../assets/courrier.jpg'
-import etude from '../assets/etu.jpg'
-import meuble from '../assets/meuble1.jpg'
-import cuisine from '../assets/cuisi.jpg'
-import vinyl from '../assets/vini.jpg'
-import back from '../assets/backi4.jpg'
 import ImageSlider from '../ImageSlide'
 import logo from '../assets/logo.webp'
-
+import { ActivityList } from '../ActivityList'
+import { Link } from 'react-router-dom'
 
 
 function Home() {
-
 
 
   return (
@@ -32,73 +26,20 @@ function Home() {
             <p className='text-center text-white text-xl'>Wir stehen Ihnen gerne in den folgenden Dienstleistungsbereichen 7 Tage die Woche, sowie an <br /> Sonn- und Feiertagen zur Verfügung. Überzeugen Sie sich selbst von unserem Können.</p>
           </div>
           <div className='grid md:grid-cols-2 gap-5 mt-[7rem]'>
-            <div className='shadow-2xl p-3'>
-              <img className='rounded-full w-[200px] h-[200px]' src={deme} alt="" />
-              <div>
-                <h4 className='my-5 text-white text-xl font-extrabold'>Umzüge</h4>
-                <p className='text-white'>Sie suchen nach ein paar Extrahänden die bei Ihrem Umzug mit anpacken? Sie wollen sich einfach zurücklehnen, während unser kräftiges Team das Umziehen in eine neue Wohnung oder neues Haus ermöglicht? Sie wollen einen stressfreien Umzug? Dann sind Sie bei uns richtig! Wir wissen wie anstrengend, zeitintensiv und nervenaufreibend das Beziehen eines neuen Zuhauses sein kann. Daher unterstützen wir Sie gerne für einen entspannten und problemfreien Ablauf. So macht Umziehen Spaß!</p>
-              </div>
-            </div>
-            <div className='shadow-2xl p-3'>
-              <img className='rounded-full w-[200px] h-[200px]' src={etude} alt="" />
-              <div>
-                <h4 className='my-5 text-white text-xl font-extrabold'>Studentenvermittlung</h4>
-                <p className='text-white'>Suchen Sie nach einer preiswerten Lösung für Ihren Umzug, die Renovierung Ihres Hauses oder Ähnlichem? Unsere Studenten stehen Ihnen gerne zur Seite. Wir vermitteln nur erfahrene und zuverlässige Helfer.</p>
-                <p className='text-white'>Wenn Sie sich für unsere Vermittlung entscheiden, können Sie sich ganz einfach bei uns melden. Wir werden Ihnen dann qualifizierte Studenten vermitteln und die entsprechenden Kontaktdaten innerhalb des selben Werktages weiterleiten. Die Vermittlungsgebühr wird nach erfolgreicher Vermittlung fällig.</p>
-              </div>
-            </div>
-            <div className='shadow-2xl p-3'>
-              <img className='rounded-full w-[200px] h-[200px]' src={meuble} alt="" />
-              <div>
-                <h4 className='my-5 text-white text-xl font-extrabold'>Möbelmontage</h4>
-                <p className='text-white'>Wir bieten folgendes an:</p>
-                <ul className='text-white'>
-                  <li>** Möbelaufbau und Möbelabbau</li>
-                  <li>** Wandmontage (Befestigung der Möbel an der Wand)</li>
-                  <li>** wir montieren z.B.: Betten, Kleiderschränke (einfache Schränke und komplizierte Schränke mit Schiebe und Schwebetüren), Regale, Kommoden, Garderoben...</li>
-                </ul>
-              </div>
-            </div>
-            <div className='shadow-2xl p-3'>
-              <img className='rounded-full w-[200px] h-[200px]' src={cuisine} alt="" />
-              <div>
-                <h4 className='my-5 text-white text-xl font-extrabold'>Küchenmontage</h4>
-                <p className='text-white'>Wir bieten folgendes an:</p>
-                <ul className='text-white'>
-                  <li>** Demontage und Entsorgung der alten Küche</li>
-                  <li>** Zusammenbau von Schränken inklusive Beine, Montage aller Fronten inkl. der Griffe, Einsetzen der Einlegeböden, Montage der Schubladen inkl. der Montage der Schubladenschienen im Korpus</li>
-                  <li>** Einpassen von Spülen, Arbeitsplatten und Elektrogeräten, Installation von Arbeitsplatten mit Zu- und Ausschnitten</li>
-                  <li>** Installation und Anschluss von Gasgeräten und Starkstromanschlüssen 16 Ampere. Absicherung müssen durch einen Fachbetrieb ausgeführt (laut NAV)</li>
-                  <li>** Ausrichten der Schränke inkl. Wandschränken und Wandbefestigungen</li>
-                  <li>** Wasseranschluss des Spülbeckens und der Mischbatterie, Einsetzen von Spülbecken und Kochfeld (kein Stromanschluss)</li>
-                </ul>
-              </div>
-            </div>
-            <div className='shadow-2xl p-3'>
-              <img className='rounded-full w-[200px] h-[200px]' src={vinyl} alt="" />
-              <div>
-                <h4 className='my-5 text-white text-xl font-extrabold'>Venyl / Laminat verlegen</h4>
-                <p className='text-white'>Wir entfernen Ihren alten Boden und oder verlegen Ihren neuen Boden. Von Parkett über Laminat bis zu Teppichboden können wir alle verschiedene Bodenbeläge entfernen. Wir verlegen allerdings nur Vinylboden/Laminat.</p>
-              </div>
-            </div>
-            <div className='shadow-2xl p-3'>
-              <img className='rounded-full w-[200px] h-[200px]' src={back} alt="" />
-              <div>
-                <h4 className='my-5 text-white text-xl font-extrabold'>Mehr...</h4>
-                <p className='text-white'>Wir bieten folgendes an:</p>
-                <ul className='text-white'>
-                  <li>** Vermietung von Umzugshilfen (voll ausgestattete Werkzeugkoffer, Akkuschrauber, Bohrmaschinen, Möbel- Rollwagen, Sackkarre, Möbeldecken etc.)</li>
-                  <li>**  Anschließen von Waschmaschine/Spülmaschine/etc</li>
-                  <li>** Sonstige Raumausstattung- und Montagearbeiten</li>
-                  <li>** Tapezieren</li>
-                  <li>** Tapeten & Teppiche entfernen</li>
-                  <li>** Sperrmüll Entsorgung</li>
-                  <li>** Transporte aller Art</li>
-                  <li>**  Anschließen von</li>
-                  <li>** Sperrmüll Entsorgung</li>
-                </ul>
-              </div>
-            </div>
+            {ActivityList.map((activity, index) => {
+              return (
+                <Link to={`/activity/${activity.id}`}>
+                <div key={index}>
+                  <div className='flex flex-col justify-center items-center shadow-2xl p-3 cursor-pointer hover:bg-slate-800 hover:rounded-2xl'>
+                    <img className='rounded-full w-[200px] h-[200px]' src={activity.image} alt="" />
+                    <div>
+                      <h4 className='my-5 text-white text-xl font-extrabold'>{activity.title}</h4>
+                      </div>
+                  </div>
+                </div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </div>
